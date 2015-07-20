@@ -34,12 +34,25 @@
     <Compile Include="DjangoDoc1\settings.py" />
     <Compile Include="DjangoDoc1\urls.py" />
     <Compile Include="DjangoDoc1\wsgi.py" />
+    <Compile Include="polls\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="polls\models.py" />
+    <Compile Include="polls\tests.py" />
+    <Compile Include="polls\views.py" />
+    <Compile Include="polls\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="polls\templates\index.html" />
     <Content Include="requirements.txt" />
+    <Content Include="templates\admin\base_site.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DjangoDoc1\" />
+    <Folder Include="templates\" />
+    <Folder Include="polls\" />
+    <Folder Include="polls\templates\" />
+    <Folder Include="templates\admin\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
